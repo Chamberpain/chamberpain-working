@@ -60,7 +60,7 @@ def main():
     print datadir
     print "Now doing %s ... " % (datadir)
 
-~~~~~~~~~~~ LOAD COORD FROM MODEL GRID ~~~~~~~~~~~~~~#
+#~~~~~~~~~~~ LOAD COORD FROM MODEL GRID ~~~~~~~~~~~~~~#
 def read_grid():
     grid_file    = os.path.join(griddir, 'grid.mat')
     grid         = hdf.File(grid_file,'r')
@@ -154,7 +154,7 @@ def plot_ff(ffvec,outfile):
     plt.close(1)
     
     
-  ~~~~~~~~~~~~ RUN THE SCRIPT ~~~~~~~~~~~~~~#
+#  ~~~~~~~~~~~~ RUN THE SCRIPT ~~~~~~~~~~~~~~#
 if __name__ == "__main__":
     for fold in exp:
         # run the script
